@@ -1,5 +1,5 @@
 html {
-background-color:white;
+background-color:lighter;
 }
 h1{
 color:maroon;
@@ -13,17 +13,28 @@ color:red;
 h3{
 color:brown;
 }
+h4{
+	color:white;
+}
 body  {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	width: 800px;
-	background-color: white;
+	background-color: grey;
 	margin: 30px auto; 
 	padding: 30px;
-	border: 3px solid red;
+	border: 3px #3b5998;
 	box-shadow: 0 9px 18px 9px;
 	
 }
 p{
 text-align:justify;
 color:maroon;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
