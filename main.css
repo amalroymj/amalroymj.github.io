@@ -17,7 +17,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e0', end
     margin-bottom:25px;
     }
 .input_title{
-    color:rgba(164, 164, 164, 0.9);
+    color:black;
     padding-left:3px;
         margin-bottom: 2px;
     }
@@ -33,6 +33,7 @@ hr{
     color:#FFFFFF;
     margin-bottom:25px;
     margin-top:50px;
+    text-align:center;
 
 }
 
