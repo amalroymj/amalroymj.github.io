@@ -4,19 +4,38 @@
 <meta charset="utf-8"/>
 <title>Registration Page</title>
 <link rel="shortcut icon" href="images/as.ico">
-<link rel="stylesheet" type="text/css" href="main.css">
-
-</head>
+<link href="main.css" rel="stylesheet">
+  </head>
 <body>
-  <h1>Registration</h1>
-  
-  <form action=""> <p> <center> Enter e-Mail: <input type="text" name="email" /> </br>
-  Username: <input type="name" name="uname" /> </br>
-  Password: <input type="password" name="rpwd" />
-   <input type="button" value="submit" onclick="" /> </center></p>
-  </form>
 
-  
+
+    <div class="container">
+    <h1 class="welcome text-center">Sign up for free</h1>
+        <div class="card1 card1-container">
+        <h2 class='login_title text-center'>Registration</h2>
+        <hr>
+
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+
+                <p class="input_title">Name</p>
+                <input type="text" id="inputName" class="login_box" placeholder="Enter your name" required autofocus>
+
+                <p class="input_title">Username</p>
+                <input type="text" id="inputEmail" class="login_box" placeholder="Enter E-mail" required>
+
+                <p class="input_title">Password</p>
+                <input type="password" id="inputPassword" class="login_box" placeholder="Enter Password" required>
+
+                <div id="remember" class="checkbox">
+                    <label>
+
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary" type="submit">Sign Up</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
 </body>
 
 </html>
