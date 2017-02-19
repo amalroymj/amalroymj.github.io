@@ -1,0 +1,89 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css"href="main.css">
+</head>
+<body>
+<div id="container">
+<div class="header">
+
+<p><h1>Canadabank™</h1></p>
+
+</div>
+<div id="body">
+  <table >
+  <caption>Details of Transactions</caption>
+  <thead>
+    <tr>
+    <th>Summary</th>
+    <th>Type</th>
+    <th >Retailer Name</th>
+    <th >Business</th>
+    <th>Location</th>
+    <th>Card Number</th>
+    <th>Authorization</th>
+    </tr>
+    </thead>
+      <tbody id="tableData"></tbody>
+  </table>
+  <script type="text/javascript">
+      var mainObj = [
+          {
+           summary: "A debit card payment of $23.00 to DEUTSCHE CD 5619 was taken from account",
+           type: "Debit Card (DEB)",
+           retailer:"DEUTSCHE",
+           business:"Finanicial Institutions-Auto Cash",
+           location:"Berlin",
+           cardnumber:5619,
+           authorisation:"Card Swipe"
+          },
+          {
+           summary: "A debit card payment of $23.00 to DEUTSCHE CD 5619 was taken from account",
+           type: "Debit Card (DEB)",
+           retailer:"DEUTSCHE",
+           business:"Finanicial Institutions-Auto Cash",
+           location:"Berlin",
+           cardnumber:5619,
+           authorisation:"Card Swipe"
+          },
+          {
+           summary: "A debit card payment of $23.00 to DEUTSCHE CD 5619 was taken from account",
+           type: "Debit Card (DEB)",
+           retailer:"DEUTSCHE",
+           business:"Finanicial Institutions-Auto Cash",
+           location:"Berlin",
+           cardnumber:5619,
+           authorisation:"Card Swipe"
+          },
+
+      ];
+      var k = '<tbody>'
+      for(i = 0;i < mainObj.length; i++){
+          k+= '<tr>';
+          k+= '<td>' + mainObj[i].summary+ '</td>';
+          k+= '<td>' + mainObj[i].type + '</td>';
+          k+= '<td>' + mainObj[i].retailer + '</td>';
+          k+= '<td>' + mainObj[i].business + '</td>';
+          k+= '<td>' + mainObj[i].location + '</td>';
+          k+= '<td>' + mainObj[i].cardnumber + '</td>';
+          k+= '<td>' + mainObj[i].authorisation + '</td>';
+          k+= '</tr>';
+      }
+      k+='</tbody>';
+      document.getElementById('tableData').innerHTML = k;
+      </script>
+</div>
+<div class="footer">
+<dl>
+<div class="tag">
+<dd><a  href="link"><p>About us</p></a></dd>
+</div>
+<dd><a href=""><p>Terms & Conditions</p></a></dd>
+<dd><a href=""><p>Privacy</p></a></dd>
+<div class="copyright">
+<p>©2017 Canadabank All Rights Reserved</p>
+</div>
+</dl>
+</div>
+</div>
+</body>
+</html>

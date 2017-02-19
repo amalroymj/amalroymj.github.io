@@ -1,3 +1,25 @@
+table
+{
+ margin-top: 30px;
+}
+thead
+{
+  background-color: red;
+  color:white;
+  text-align:center;
+}
+td
+{
+  text-align: left;
+  padding:15px;
+
+}
+tbody
+{
+  text-align: left;
+
+}
+
 .header
 {
   overflow-x: hidden;
