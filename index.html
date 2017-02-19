@@ -1,5 +1,8 @@
- <html>
+<!DOCTYPE html>
+ <html lang="en">
 <head>
+  <meta charset="utf-8"/>
+  <title>Login to Canadabank</title>
   <link rel="stylesheet" type="text/css"href="main.css">
 </head>
 <body>
@@ -10,9 +13,18 @@
 
 </div>
 <div id="body">
-  <form>
+
+  <div class="card"> <!--sign in box div begins -->
+  <form class="form-signin">
+
+    <p class="input_title">Username</p>
+    <input type="text" id="inputEmail" class="login_box" placeholder="Enter username" required autofocus>
+
+    <p class="input_title">Password</p>
+    <input type="password" id="inputPassword" class="login_box" placeholder="Enter password" required>
 
   </form>
+  </div> <!-- sign in box div ends -->
 </div>
 <div class="footer">
 <dl>
