@@ -6,6 +6,7 @@
 
   background-color: red;
 }
+
 #body
 {
   overflow-x: hidden;
@@ -15,6 +16,7 @@
   height:450px;
   background-color: white;
 }
+
 #tab
 {
 
@@ -146,9 +148,92 @@ h1
 }
 
 
+.card {
+    background: red;
+    padding: 1px 25px 30px;
+    margin: 10px auto 25px;
+    margin-top: 15%x;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.login_box{
+    background:#f7f7f7;
+    border:3px solid #F4F4F4;
+    padding-left: 15px;
+    margin-bottom:25px;
+    border-radius: 10px;
+    }
+
+.input_title{
+  color:white;
+  padding-left:5px;
+  margin-bottom: 5px;
+}
 .placeholder{
   float:left;
   color:white;
   padding-left:3px;
   margin-bottom: 1px;
+}
+.form-signin #inputName,
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 30px;
+    font-size: 15px;
+}
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card1 {
+  background: rgb(255,0,0);
+  padding: 1px 25px 30px;
+  margin: 10px auto 25px;
+  margin-top: 15%x;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 25px;
+  width: 250px;
+}
+.login_title{
+  font-family: "myriad-pro",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color:white;
+}
+
+.loginbutton{
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 40px;
+  width: 250px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.joinbutton{
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 40px;
+  width: 250px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
