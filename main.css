@@ -80,11 +80,25 @@ h1
 .card{
   background: rgb(255,0,0);
   /* just in case there no content*/
-  padding: 1px 25px 30px; 
+  padding: 1px 25px 30px;
   margin: 10px auto 25px;
   margin-top: 15%x;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 25px;
   width: 250px;
+}
+.loginbutton{
+  font-weight: 700;
+  height:36px;
+  margin: auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  border-radius:2px;
+  background:red;
+  height: 55px;
+  margin-bottom:0px;
+  width: 90px;
 }
