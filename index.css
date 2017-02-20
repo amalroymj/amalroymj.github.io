@@ -216,6 +216,7 @@ h1
 }
 
 .loginbutton{
+  margin-bottom: 2px;
   background-color: red;
   color: white;
   border: 1px solid white;
@@ -228,6 +229,7 @@ h1
 }
 
 .joinbutton{
+  margin-top:7px;
   background-color: red;
   color: white;
   border: 1px solid white;
