@@ -1,6 +1,7 @@
 <html>
 <head>
  <link rel="stylesheet" type="text/css"href="main.css">
+ <script src="Scripts/add.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="container">
@@ -11,7 +12,8 @@
 </div>
 <center>
 <div id="body">
-<div id ="tab">
+<form name="addtransaction" onsubmit="return formValidation()"  >
+
 
 <input type="date" id ="date" name="Date">
 <select id= "Mode">
@@ -19,12 +21,17 @@
 <option value= "Credit">Credit</option>
 <option value= "Debit">Debit</option>
 </select>
-<input type="text" id="amount" placeholder= "Amount">
-<input amount ="text"  id="vat" placeholder="Vat Amount"><br>
-<button type="button" id="btn">Add Transaction </button> </center>
-</div>
-<div id="history">
-</div>
+
+<input type="text" name="description" id="desc" placeholder="Description">
+
+  <i>$</i>
+<input type="text"name="amount" id="amount" placeholder= "Amount">
+
+
+
+  <input type="submit" value="Add Transaction" >
+
+</form>
 </div>
 
 </div>
