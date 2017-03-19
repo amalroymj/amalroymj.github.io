@@ -1,6 +1,10 @@
 <html>
 <head>
- <link rel="stylesheet" type="text/css"href="index.css">
+
+
+ <link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="validation.js">
+</script>
 </head>
 <body>
 <div id="container">
@@ -12,21 +16,25 @@
 <div id="body">
       <div class="card1">
       <h2 class='login_title'>Registration</h2>
-      <hr>
 
-          <form class="form-signin">
+          <form name="form-signin" >
               <span id="reauth-email" class="reauth-email"></span>
 
-              <p class="input_title">Name</p>
-              <input type="text" id="inputName" class="login_box" placeholder="Enter your name" required autofocus>
+              <p class="input_title">FirstName</p>
+              <input type="text" id="FirstName" class="login_box" placeholder="Enter your first name"  required autofocus >
 
-              <p class="input_title">Username</p>
-              <input type="text" id="inputEmail" class="login_box" placeholder="Enter E-mail" required>
+              <p class="input_title">LastName</p>
+                <input type="text" id="LastName" class="login_box" placeholder="Enter your last name"  required autofocus>
+
+              <p class="input_title">EmailId</p>
+              <input type="text" id="inputEmail" class="login_box" placeholder="Enter your E-mail" required>
+
 
               <p class="input_title">Password</p>
               <input type="password" id="inputPassword" class="login_box" placeholder="Enter Password" required>
 
-              <button class="loginbutton" type="submit">Sign Up</button>
+
+              <button class="loginbutton" type="submit" onclick="check(FirstName);">Sign Up</button>
           </form><!-- /form -->
       </div><!-- /card-container --></div>
 <div class="footer">
