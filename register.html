@@ -17,24 +17,26 @@
       <div class="card1">
       <h2 class='login_title'>Registration</h2>
 
-          <form name="form-signin" >
-              <span id="reauth-email" class="reauth-email"></span>
+          <form name="signin" onsubmit="return registrationValidation();">
+
 
               <p class="input_title">FirstName</p>
-              <input type="text" id="FirstName" class="login_box" placeholder="Enter your first name"  required autofocus >
+              <input type="text" name="FirstName" class="login_box" placeholder="Enter your first name"  required autofocus >
 
               <p class="input_title">LastName</p>
-                <input type="text" id="LastName" class="login_box" placeholder="Enter your last name"  required autofocus>
+                <input type="text" name="LastName" class="login_box" placeholder="Enter your last name"  required autofocus>
+                <p class="input_title">UserName</p>
+                <input type="text" name="username"class="login_box" placeholder="Enter your username" required>
 
               <p class="input_title">EmailId</p>
-              <input type="text" id="inputEmail" class="login_box" placeholder="Enter your E-mail" required>
+              <input type="text" id="inputEmail" name="email"class="login_box" placeholder="Enter your E-mail" required>
 
 
               <p class="input_title">Password</p>
               <input type="password" id="inputPassword" class="login_box" placeholder="Enter Password" required>
 
 
-              <button class="loginbutton" type="submit" onclick="check(FirstName);">Sign Up</button>
+              <button class="loginbutton" type="submit" >Sign Up</button>
           </form><!-- /form -->
       </div><!-- /card-container --></div>
 <div class="footer">
