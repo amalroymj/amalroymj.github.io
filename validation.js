@@ -22,7 +22,7 @@ return false;
 }
 function fname_validation(fname)
 {
-  var letters=/^[A-Za-z0-9]+$/;
+  var letters=/^[A-Z][a-zA-Z0-9]+$/;
   if(fname.value.match(letters) )
   {
     return true;
@@ -36,7 +36,7 @@ function fname_validation(fname)
 }
 function lname_validation(lname)
 {
-  var letters=/^[A-Za-z0-9]+$/;
+ var letters=/^[A-Z][a-zA-Z0-9]+$/;
   if(lname.value.match(letters))
   {
     return true;
