@@ -16,7 +16,7 @@ function desc_validation(description)
 {
   var desc_length=description.value.length;
   var letters=new RegExp("[a-zA-Z0-9_-]");
-  if(description.value.match(letters) && desc_length>7)
+  if(description.value.match(letters) && desc_length>=10)
   {
     return true;
   }
@@ -36,7 +36,7 @@ var reg=/^[+-]?[0-9]{1,9}(?:\.[0-9]{1,2})?$/;
 
  else
    {
-     alert("amount should be ");
+     alert("amount can have upto two decimal places/range should be between -10000 to 10000 ");
      amount.focus();
    }
 
