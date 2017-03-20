@@ -1,4 +1,4 @@
-rs n
+
 function registrationValidation()
 {
   var fname=document.signin.FirstName;
