@@ -4,6 +4,7 @@
   <meta charset="utf-8"/>
   <title>Login to Canadabank</title>
   <link rel="stylesheet" type="text/css"href="index.css">
+  <script src="Scripts/index.js" type="text/javascript" ></script>
 </head>
 <body>
 <div id="container">
@@ -19,16 +20,15 @@
     <h2 class='login_title'>Login</h2>
     <hr>
 
-  <form class="form-signin">
+  <form name="signin"class="form-signin" onsubmit="return loginValidation();" >
 
     <p class="input_title">Username</p>
-    <input type="text" id="inputEmail" class="login_box" placeholder="Enter username" required autofocus>
+    <input type="text" id="inputEmail" name="username"class="login_box" placeholder="Enter username" required autofocus>
 
     <p class="input_title">Password</p>
-    <input type="password" id="inputPassword" class="login_box" placeholder="Enter password" required>
-  </form>
-  <form action="Dash.html">
-    <button class="loginbutton" type="submit">Login</button>
+    <input type="password" id="inputPassword" name="password"class="login_box" placeholder="Enter password" required>
+
+    <input class="loginbutton" type="submit" name="submit" value="submit">
   </form>
   <form action="register.html">
     <button class="joinbutton" type="submit">Join Us</button>
