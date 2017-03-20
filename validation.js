@@ -1,4 +1,4 @@
-
+rs n
 function registrationValidation()
 {
   var fname=document.signin.FirstName;
@@ -29,7 +29,7 @@ function fname_validation(fname)
   }
   else {
     {
-      alert("First name can only A-Z 0-9");
+      alert("First name can only be A-Z 0-9/First alphabet should be capital");
       fname.focus();
     }
   }
@@ -43,7 +43,7 @@ function lname_validation(lname)
   }
   else {
     {
-      alert("First name can only A-Z 0-9");
+      alert("Last name can only be A-Z 0-9/First alphabet should be capital");
       lname.focus();
     }
   }
@@ -58,7 +58,7 @@ return true;
 }
 else
 {
-alert("Username must have alphabet characters only");
+alert("Username must be five characters long/Username should not include special symbols");
 uname.focus();
 return false;
 }
