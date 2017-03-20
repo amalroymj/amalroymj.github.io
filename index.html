@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
  <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -20,16 +20,16 @@
     <h2 class='login_title'>Login</h2>
     <hr>
 
-  <form name="signin"class="form-signin" onsubmit="return loginValidation();" >
+  <form class="form-signin" name="formLogin" onsubmit="return formValidate();" action="Dash.html" method="get">
 
     <p class="input_title">Username</p>
-    <input type="text" id="inputEmail" name="username"class="login_box" placeholder="Enter username" required autofocus>
+    <input type="text" id="inputEmail" name="username" class="login_box" placeholder="Enter username" required autofocus>
 
     <p class="input_title">Password</p>
-    <input type="password" id="inputPassword" name="password"class="login_box" placeholder="Enter password" required>
-
-    <input class="loginbutton" type="submit" name="submit" value="submit">
+    <input type="password" id="inputPassword" name="passwd" class="login_box" placeholder="Enter password" required>
+    <button class="loginbutton" type="submit">Login</button>
   </form>
+
   <form action="register.html">
     <button class="joinbutton" type="submit">Join Us</button>
   </form>
