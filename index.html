@@ -1,53 +1,54 @@
-<!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE HTML>
+<html>
+<title>Countdown</title>
 <head>
-  <meta charset="utf-8"/>
-  <title>Login to Canadabank</title>
-  <link rel="stylesheet" type="text/css"href="index.css">
-  <script type="text/javascript" src="Scripts/index.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 120px;
+  margin-top: 280px;
+  color: grey;
+}
+</style>
 </head>
 <body>
-<div id="container">
-<div class="header">
 
-<p><h1>Canadabank™</h1></p>
+<body bgcolor="black">
+<p id="demo"></p>
 
-</div>
-<div id="body">
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 24, 2019 20:00:00").getTime();
 
-  <div class="card"> <!--sign in box div begins -->
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-    <h2 class='login_title'>Login</h2>
-    <hr>
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var msec = Math.floor((distance % (1000)) / 1000);
+    
+  // Output the result in an element with id="demo"
 
-  <form class="form-signin" name="formLogin" onsubmit="return formValidate();" action="Dash.html" method="get">
+  document.getElementById("demo").innerHTML = "It's almost Weekend !!!" + "</br>" + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Free to Go !!";
+  }
+}, 1000);
+</script>
 
-    <p class="input_title">Username</p>
-    <input type="text" id="inputEmail" name="username" class="login_box" placeholder="Enter username" required autofocus>
-
-    <p class="input_title">Password</p>
-    <input type="password" id="inputPassword" name="passwd" class="login_box" placeholder="Enter password" required>
-    <button class="loginbutton" type="submit">Login</button>
-  </form>
-
-  <form action="register.html">
-    <button class="joinbutton" type="submit">Join Us</button>
-  </form>
-
-  </div> <!-- sign in box div ends -->
-</div>
-<div class="footer">
-<dl>
-<div class="tag">
-<dd><a  href="link"><p>About us</p></a></dd>
-</div>
-<dd><a href=""><p>Terms & Conditions</p></a></dd>
-<dd><a href=""><p>Privacy</p></a></dd>
-<div class="copyright">
-<p>©2017 Canadabank All Rights Reserved</p>
-</div>
-</dl>
-</div>
-</div>
 </body>
 </html>
